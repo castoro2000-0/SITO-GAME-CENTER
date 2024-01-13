@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco Impiccato Open Day IIS Carlo Levi Portici</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/logo/carloLevi.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <div class="fineGioco">
+        <p id="statoPartita" ></p>
+        <p id="parolaPersa"></p>
+        <button type="reset" onclick="restart()">reset</button>
+    </div>
+
+    <header>
+        <h1>Il Gioco dell'Impiccato</h1>
+    </header>
+
+    <div class="textInput">
+        <label for="textInput">Inserisci la parola da indovinare:</label><br>
+        <input type="password" id="inputParola" name="text" maxlength="15">
+        <button type="submit" onclick="memorizzaValore()">Invia</button>
+    </div>
+
+    <div class="letterInput">
+        <label for="textInput">Inserisci una lettera:</label><br>
+        <input type="text" name="text" maxlength="1" id="inputLettera">
+        <button type="submit" onclick="indovinaLettera()">Invia</button>
+    </div>
+    
+    <div class="div-lettereSbagliate">
+        <p>Lettere sbagliate:</p>
+        <p id="lettereSbagliate"></p>
+    </div>
+
+    <img src="image/impiccato/impiccato1.png" alt="impiccato1" id="impiccato">
+
+
+    <p id="trattini"></p>
+
+    <p id="crediti" >Fatto da: <br> <span>Piero Rania <br><span>Tommaso Romano</span></span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
